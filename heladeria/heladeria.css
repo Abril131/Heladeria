@@ -1,0 +1,292 @@
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+    background-color: #FB8591;
+    
+  }
+
+
+
+.bod{
+  background-color: #8b94be;
+}
+
+input{
+    height: 30px;
+
+}
+
+
+/*div.polaroid {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}*/
+
+
+.v {border: 2px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  
+  h1{
+      text-align: center;
+  }
+  
+  h2{
+      text-align: center;
+  }
+  
+  p{
+      text-align: center;
+  }
+  
+  #b{
+      text-align: center;
+      
+  }
+  
+  #bu{
+    background-color: #AE8BBE;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    border-radius: 5px;
+  
+  }
+
+  #ba{
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  
+  border-radius: 15px;
+  }
+
+  #bo{
+    background-color: #FEF7F7;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    border-radius: 5px;
+  
+  }
+
+  div.ga {
+    border: 2px solid #FB8591 ;/*#FB8591*/
+  }
+  
+  div.ga:hover {
+    border: 2px solid rgb(255, 18, 117);
+  }
+  
+  div.ga img {
+    width: auto;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 1px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 1px 5px;
+  display:inline-table;
+  width: 18%; /*33*/
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 50%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .iz{
+    background-color: #FEF7F7;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    border-radius: 5px;
+    position: absolute;
+  bottom: -80px;
+  right: 16px;
+  font-size: 18px;
+  
+  }
+  
+  .de{
+    background-color: #FEF7F7;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    position: absolute;
+  bottom:-80px;
+  left: 16px;
+  font-size: 18px;
+}
+
+#centrar {
+  margin-left: 100px;
+}
+
+.izq{
+  background-color: #FEF7F7;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  border-radius: 5px;
+  position: absolute;
+bottom: -420px;
+right: 16px;
+font-size: 18px;
+
+}
+
+.der{
+  background-color: #FEF7F7;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  position: absolute;
+bottom: -420px;
+left: 16px;
+font-size: 18px;
+}
+
+.izqu{
+  background-color: #FEF7F7;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  border-radius: 5px;
+  position: absolute;
+bottom: 0px;
+right: 16px;
+font-size: 18px;
+
+}
+
+.dere{
+  background-color: #FEF7F7;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  position: absolute;
+bottom:0px;
+left: 16px;
+font-size: 18px;
+}
+
+
+
+.btn-group .button {
+  background-color: #ff4e60; 
+  border: 1px solid #ff939e;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+.btn-group .button:hover {
+  background-color: #ff939e;
+  float: center;
+
+}
+
+
+

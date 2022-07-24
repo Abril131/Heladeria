@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Proyecto.js"></script>
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <!-- <script src="../JAVASCRIPTS/Proyecto3.js"></script> -->
+    <title>Heladeria</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png" alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <!-- <button class="cerrarS" onclick="cerrarSesion()">Cerrar sesión</button> -->
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+                <button class="cerrarS" onclick="cerrarSesion()">Corte de Caja</button>
+            </div>
+            <!-- <div>
+                 <button class="cerrarS" onclick="cerrarSesion()">Corte de Caja</button> 
+                
+            </div> -->
+            
+        </div>
+    </header>
+
+    <div class="cuerpo">
+        <div>
+            <input type="number" id="cantidad" placeholder="Cantidad de helados" class="Input2">
+        </div>
+        <div>
+            <button value="101" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Arandano.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Arandano</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="102" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Cafe.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Cafe</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="103" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Chicle.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Chicle</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="104" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Chocolate.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Chocolate</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="105" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Chocomenta.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Chocomenta</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="106" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Coco.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Coco</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="107" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Dulce de Leche.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Dulce de Leche</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="108" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Frambuesa.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Frambuesa</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="109" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Fresa.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Fresa</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="110" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Kit Kat.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Kit Kat</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="111" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Kiwi .png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Kiwi</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="112" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Limon.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Limón</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="113" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Mango.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Mango</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="114" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/nata-nueces.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Nata Nueces</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="115" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Oreo.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Oreo</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="116" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Pistache.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Pistache</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="117" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Piña.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Piña</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="118" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado QuesoZarzamora.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Quezo Zarzamora</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="119" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Uva.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Uva</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="120" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/Helados/Helado Vainilla.png" alt="sabor" width="188" height="141">
+                    <div class="desc">
+                        <h3 class="titulo">Helado Vainilla</h3>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="BB2">
+        <div class="cuerpo2S">
+            <button onclick="saborSeleccion()" class="isB2">Conos</button>
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Conexión a BD</title>
+    <script src="./Intro.js"></script>
+</head>
+
+<body>
+    <p>Nombre</p>
+    <input type="text" id="nombreowo">
+    <p>Anppellido</p>
+    <input type="text" id="apowo">
+    <button onclick="login()">Aceptar</button>
+    <button onclick="select()">mostrar base de datos</button>
+    <button onclick="MostrarP()">Mostrar Registro</button>
+    <br>
+    <input type="text" id="buscador">
+    <button onclick="Buscar()">Buscar</button>
+    <br>
+    <button onclick="Borrar()">Borrar</button>
+    <table id="table2">
+        <tr>
+            <th>
+                Id_Alumnos
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellido
+            </th>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <table id="table">
+            <tr>
+                <th>
+                    Id_Alumnos
+                </th>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Apellido
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script type="text/javascrip" src="./conectar.js"></script> 
+
+</html>

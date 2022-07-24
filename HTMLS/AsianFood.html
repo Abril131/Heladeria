@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>AsianFood.com</title>
+    <link rel="stylesheet" href="AsianFoodStyles.css">
+    <script src="Comentarios.js"></script>
+    <script src="proyect.js"></script>
+</head>
+<body onload="comentar()">
+    <header>
+      <div>
+        <a href="AsianFood.html"><img src="imagenes/logo11.png" alt="Logo"></a>
+      </div>
+      <div id="menuC">
+        <a href="china.html"><button class="MenuB">China</button></a>
+        <a href="corea.html"><button class="MenuB">Corea</button></a>
+        <a href="india.html"><button class="MenuB">India</button></a>
+        <a href="japon.html"><button class="MenuB">Japón</button></a>
+        <a href="tailandia.html"><button class="MenuB">Tailandia</button></a>
+        <a href="vietnam.html"><button class="MenuB">Vietnam</button></a>
+      </div>
+    </header>
+    <div class="tutoriales">
+      <div>
+          <h2>Tutoriales de Comida Asiatica</h2>
+      </div>
+      <section id="centrar">
+        <h4 class="descripcion">Bienvenidos a nuestra pagina Asian Food donde encontraras multiples recetas de diferentes paises del continente asiatico</h4>
+        <a href="china.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/kimchi.jpg" alt="Tutorial Coreano" width="300" height="200">
+              <div class="descripcion">
+                <h2>KIMCHI</h2>
+                <h5> El kimchi es un plato coreano hecho a base de preparación fermentada que tiene como ingrediente básico la col asiática o repollo Brassica pekinensis.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="corea.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/polloagridulce.jpg" alt="Tutorial China" width="300" height="200">
+                <div class="descripcion">
+                  <h2>POLLO AGRIDULCE</h2>
+                  <h5> El pollo agridulce es un plato o aperitivo típico de la gastronomía China. El pollo es esencialmente tiras de pollo de carne blanca rebozadas y fritas.</h5>
+                </div>
+            </div>
+          </div>
+        </a>
+        <a href="japon.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/descarga.jpg" alt="Tutorial Japon" width="300" height="200">
+              <div class="descripcion">
+                <h2>RAMEN</h2>
+                <h5>El ramen es un plato de fideos japonés. Consiste en distintos tipos de fideos japoneses servidos en un caldo a base de hueso de cerdo o pollo y verduras</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="india.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/samosas2.jpg" alt="Tutorial india" width="300" height="200">
+              <div class="descripcion">
+                <h2>SAMOSAS</h2>
+                <h5>La samosa es una empanadilla frita u horneada con relleno salado. Puede tomar diferentes formas como triangulares, según la región.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="tailandia.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/somtam.jpg" alt="Tutorial tailandesa" width="300" height="200">
+              <div class="descripcion">
+                <h2>SOM TAM</h2>
+                <h5>Som tam es una ensalada especiada cuyo principal ingrediente es la papaya, el plato es originario de Laos y de Isan, de Tailandia.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="vietnam.html">
+          <div class="responsive">
+              <div class="img">
+                <img src="imagenes/goicuon.jpg" alt="Tutorial vietnam" width="300" height="200">
+              <div class="descripcion">
+                <h2>GOI CUON</h2>
+                <h5>Rollo de verano, una comida vietnamita compuesta por carne de cerdo, gambas, hierbas, entre otros ingredientes, enrollado en papel de arroz.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div>
+          <textarea id="comentarios" readonly cols="40" rows="10"></textarea>
+        </div>
+<!--
+          <div class="responsive">
+            <div class="img">
+              <a href="tailandia">
+                <img src="css/imagenes/descarga.jpg" alt="Tutorial coreano" width="600" height="400">
+              </a>
+              <div class="desc">comida coreana
+              </div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="img">
+              <a href="tailandia">
+                <img src="css/imagenes/descarga.jpg" alt="Tutorial coreano" width="600" height="400">
+              </a>
+              <div class="desc">comida coreana
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+-->
+      </section>
+    </div>
+    <div class="comentario">
+      <div>
+        <h3>Comentarios</h3>
+      </div>
+      <div id="textArea">
+        <textarea id="contenido" rows="4" cols="70"></textarea>        
+        <button id="botonE" onclick="comentar()"> Enviar </button>
+    </div>
+    </div>
+    <footer>
+      <br>
+      <label>Derechos Reservados ©
+        <br>Alan George Trinidad Cruz y Alma Abri Nuñez Gonzalez
+      </label>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/Inventario.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <title>Empleados</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+        </div>
+    </header>
+    <div class="cuerpoA">
+        <div class="cuerpoA2">
+            <div class="dropdown">
+                <!--  --> <a href="adminMenuEmpleados.html"><button class="dropbtn">Empleados</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuCompras.html"><button class="dropbtn">Compras</button></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Reporte</button>
+                <div class="dropdown-content">
+                    <a href="#">Generar Reporte</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuInventario.html"><button class="dropbtn" href="">Inventario</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuVentas.html"><button class="dropbtn">Ventas</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="fondo">
+
+    </div>
+
+    </body>
+</html>

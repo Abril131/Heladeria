@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/GeneracionDeReporte.js"></script>
+    <script src="../JAVASCRIPTS/ingresoCaja.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <title>Reporte</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+        </div>
+    </header>
+    <div class="cuerpoA">
+        <div class="cuerpoA2">
+            <div class="dropdown">
+                <a href="adminMenuEmpleados.html"><button class="dropbtn">Empleados</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuCompras.html"><button class="dropbtn">Compras</button></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="mostrarTablaReporte(),mostrarDatos()">Generar Reporte</button>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuInventario.html"><button class="dropbtn">Inventario</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuVentas.html"><button class="dropbtn">Ventas</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="fondo">
+        <br><br>
+        <div class="tituloR">
+            <div>
+                <table class="tablaReporte">
+                    <tr>
+                        <th colspan="3"><b class="titulo">REPORTE DE VENTAS</b></th>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><b class="titulo">PRODUCTO MAS VENDIDO</b></th>
+                    </tr>
+                    <tr>
+                        <th><b class="titulo">Producto</b></th>
+                        <th><b class="titulo">Cantidad</b></th>
+                        <th><b class="titulo">Total</b></th>
+                    </tr>
+                    <tr>
+                        <td><label id="heladoMax"></label></td>
+                        <td><label id="cantidadHH"></label></td>
+                        <td><label id="totalHH"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="conoMax"></label></td>
+                        <td><label id="cantidadCC"></label></td>
+                        <td><label id="totalCC"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="decoracionMax"></label></td>
+                        <td><label id="cantidadDD"></label></td>
+                        <td><label id="totalDD"></label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><b class="titulo">PRODUCTO MENOS VENDIDO</b></th>
+                    </tr>
+                    <tr>
+                        <th><b class="titulo">Producto</b></th>
+                        <th><b class="titulo">Cantidad</b></th>
+                        <th><b class="titulo">Total</b></th>
+                    </tr>
+                    <tr>
+                        <td><label id="heladoMin"></label></td>
+                        <td><label id="cantidadH"></label></td>
+                        <td><label id="totalH"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="conoMin"></label></td>
+                        <td><label id="cantidadC"></label></td>
+                        <td><label id="totalC"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="decoracionMin"></label></td>
+                        <td><label id="cantidadD"></label></td>
+                        <td><label id="totalD"></label></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><b class="titulo">GASTOS Y GANANCIAS</b></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th colspan="2"><b class="titulo">Total</b></th>
+                    </tr>
+                    <tr>
+                        <td>Compras</td>
+                        <td colspan="2"><label id="compras"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Ventas</td>
+                        <td colspan="2"><label id="ventas"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Capital de la caja</td>
+                        <td colspan="2"><label id="capitalCaja"></label></td>
+                    </tr>
+                    <tr>
+                        <td><b>Ganancias</b></td>
+                        <td colspan="2"><label id="gananciasT"></label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>

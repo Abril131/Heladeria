@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/CRDInventario.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <title>Inventario</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+        </div>
+    </header>
+    <div class="cuerpoA">
+        <div class="cuerpoA2">
+            <div class="dropdown">
+                <a href="adminMenuEmpleados.html"><button class="dropbtn">Empleados</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuCompras.html"><button class="dropbtn">Compras</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuReporte.html"><button class="dropbtn">Reporte</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuInventario.html"><button class="dropbtn" href="">Inventario</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuVentas.html"><button class="dropbtn">Ventas</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="fondo">
+
+        <br><br>
+        <div class="titulos666">
+            <div class="titulo45">
+                <h3 class="titulo">INVENTARIO DE LA EMPRESA</h3>
+            </div>
+            <br>
+            <div class="tablaEstrc2">
+                <table id="Table" class="tabla2">
+                    <tr>
+                        <th>
+                            <b>id_producto</b>
+                        </th>
+                        <th>
+                            <b>id_subproducto</b>
+                        </th>
+                        <th>
+                            <b>Tipo de producto</b>
+                        </th>
+                        <th>
+                            <b>Subtipo de producto</b>
+                        </th>
+                        <th>
+                            <b>Cantidad</b>
+                        </th>
+                        <th>
+                            <b>Tipo de cantidad</b>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="titulo">Visualizar primero por:</h2>
+            <div class="displayFlex3">
+                <button onclick="inordeninv()" class="botones4"><b>Helado</b></button>
+                <button onclick="postordeninv()" class="botones4"><b>Cono</b></button>
+                <button onclick="preordeninv()" class="botones4"><b>Decoracion</b></button>
+            </div>
+        </div>
+
+        <div class="displayFlex2">
+            <div class="titulo2">
+                <div class="titulo4">
+                    <h3 class="titulo">INGRESAR NUEVO INVENTARIO</h3>
+                </div>
+                <div>
+                    <h3 for="id_tipoProducto" class="titulo">Tipo de producto</h3>
+                    <select title="Talla" name="" id="id_tipoProducto" class="inputEC2">
+                        <option value="0">-- Seleccione una opción --</option>
+                        <option value="1" class="inputEC2">Helado</option>
+                        <option value="2" class="inputEC2">Cono</option>
+                        <option value="3" class="inputEC2">Vaso</option>
+                        <option value="4" class="inputEC2">Chispas</option>
+                        <option value="5" class="inputEC2">Galleta</option>
+                        <option value="6" class="inputEC2">Chocolate</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 for="id_subproducto" class="titulo">Ingresa el ID del subproducto:</h3>
+                    <input class="inputEC" type="number" id="id_subproducto" placeholder="ID del subproducto">
+                </div>
+                <div>
+                    <h3 for="id_productoNombre" class="titulo">Nombre del producto:</h3>
+                    <input class="inputEC" type="text" id="id_productoNombre" placeholder="Nombre del producto">
+                </div>
+                <div>
+                    <h3 for="id_cantidad" class="titulo">Cantidad:</h3>
+                    <input class="inputEC" type="number" id="id_cantidad" placeholder="Cantidad">
+                </div>
+                <div>
+                    <button onclick="agregarProductoInventarioEnLaDB()" class="botones4"><b>Agregar
+                            inventario</b></button>
+                </div>
+            </div>
+            <div class="titulo33">
+                <div class="titulo4">
+                    <h3 class="titulo">ELIMINAR O MODIFICAR INVENTARIO</h3>
+                </div>
+                <div>
+                    <h3 class="titulo">Ingrese el ID del subproducto del elemento que desee eliminar:</h3>
+                    <input class="inputEC" type="number" id="inputID1" placeholder="ID">
+                </div>
+                <div>
+                    <button onclick="eliminarProductoInventarioDeLaDB()" class="botones4"><b>Eliminar</b></button>
+                    <button onclick="BuscarProductoInventarioDeLaDB()" class="botones4"><b>Buscar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

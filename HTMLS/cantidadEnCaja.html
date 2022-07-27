@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/ingresoCaja.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <title>Cantidad en caja</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+        </div>
+    </header>
+    <div class="fondo">
+        <br><br>
+        <div class="tituloR">
+            <div class="titulo45">
+                <h3 class="titulo">CANTIDAD EN CAJA</h3>
+            </div>
+            <input type="number" class="inputEC" id="cantidadCaja" placeholder="Dinero en caja">
+            <button onclick="ingresoAlJson()" class="botones4">Aceptar</button>
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>

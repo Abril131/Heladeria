@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/pedidoCono.js"></script>
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <title>Cono</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+            </div>
+        </div>
+    </header>
+    <div class="cuerpo">
+        <div>
+            <button value="201" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono1.png" class="img" alt="cono" width="90" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono de Vainilla</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="202" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono2.png" class="img" alt="cono" width="90" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono de Galleta</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="203" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono3.png" class="img" alt="cono" width="90" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono Sencillo</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="204" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono4.png" class="img" alt="cono" width="100" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono Crepa</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="205" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono5.png" class="img" alt="cono" width="80" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono Doble</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="206" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono6.png" class="img" alt="cono" width="80" height="140">
+                    <div class="desc1">
+                        <h3 class="titulo">Cono Marmoleado de Vainilla y Chocolate</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="207" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono7.png" class="img" alt="cono" width="90" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono de Chocolate</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="208" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono8.png" class="img" alt="cono" width="130" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono Crepa Doble</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="209" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono9.png" class="img" alt="cono" width="100" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Cono Vaso Galleta</h3>
+                    </div>
+                </div>
+            </button>
+            <button value="210" onclick="precioSeleccion(this)" class="bt">
+                <div class="responsive">
+                    <img src="../img/conos/cono10.png" class="img" alt="cono" width="120" height="140">
+                    <div class="desc">
+                        <h3 class="titulo">Vaso</h3>
+                    </div>
+                </div>
+            </button>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="BB">
+        <div class="cuerpo2">
+            <button class="isB2" onclick="cancelar()">Cancelar</button>
+        </div>
+        <div class="cuerpo2">
+            <a>
+                <button onclick="conoSeleccion()" class="isB2">Complementos</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

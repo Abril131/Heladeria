@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Titillium+Web:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heladeria.css">
+    <script src="../JAVASCRIPTS/Login.js"></script>
+    <script src="../JAVASCRIPTS/CRUDcompras.js"></script>
+    <script src="../JAVASCRIPTS/CerrarSesion.js"></script>
+    <title>Compras</title>
+</head>
+
+<body onload="nombreE()">
+    <header class="home21">
+        <div class="iconoD">
+            <img src="../img/Bp_Ice_Cream.png" alt="logo">
+        </div>
+        <div class="usuarioU">
+            <div class="displayflex">
+                <div class="user">
+                    <h3 class="titulo" id="empleadoN"></h3>
+                </div>
+                <div class="icono">
+                    <img src="../img/kisspng-user-silhouette-simplicity-vector-5b52f75d202791.0292972215321639331317.png"
+                        alt="icono" id="icono">
+                </div>
+            </div>
+            <div class="Sesion">
+                <button class="cerrarS" onclick="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+        </div>
+    </header>
+    <div class="cuerpoA">
+        <div class="cuerpoA2">
+            <div class="dropdown">
+                <a href="adminMenuEmpleados.html"><button class="dropbtn">Empleados</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuCompras.html"><button class="dropbtn">Compras</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuReporte.html"><button class="dropbtn">Reporte</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuInventario.html"><button class="dropbtn">Inventario</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="adminMenuVentas.html"><button class="dropbtn">Ventas</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="fondo">
+        <br><br>
+        <div class="titulos66">
+            <div class="titulo45">
+                <h3 class="titulo">COMPRAS DE LA EMPRESA</h3>
+            </div>
+            <br>
+            <div class="tablaEstrc">
+                <table id="Table" class="tabla2">
+                    <tr>
+                        <th>
+                            <b>Id</b>
+                        </th>
+                        <th>
+                            <b>Nombre de la compra</b>
+                        </th>
+                        <th>
+                            <b>Cantidad</b>
+                        </th>
+                        <th>
+                            <b>Precio</b>
+                        </th>
+                        <th>
+                            <b>Total</b>
+                        </th>
+                        <th>
+                            <b>Fecha compra</b>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="displayFlex2">
+            <div class="titulo2">
+                <div class="titulo4">
+                    <h3 class="titulo">INGRESAR COMPRAS</h3>
+                </div>
+                <div>
+                    <h3 for="nombreID" class="titulo">Nombre Compra:</h3>
+                    <input class="inputEC" type="text" id="nombreID" placeholder="Nombre">
+                </div>
+                <div>
+                    <h3 for="cantidadID" class="titulo">Cantidad:</h3>
+                    <input class="inputEC" type="number" id="cantidadID" placeholder="Cantidad">
+                </div>
+                <div>
+                    <h3 for="precioID" class="titulo">Precio:</h3>
+                    <input class="inputEC" type="number" id="precioID" placeholder="Precio">
+                </div>
+                <div>
+                    <h3 for="fechaID" class="titulo">Fecha de la compra:</h3>
+                    <input class="inputEC" type="text" id="fechaID" placeholder="MM/DD/YYYY">
+                </div>
+                <div>
+                    <button onclick="subirDatosCompraDB()" class="botones4"><b>Subir Compra</b></button>
+                </div>
+            </div>
+            <div class="titulo33">
+                <div class="titulo4">
+                    <h3 class="titulo">ELIMINAR O MODIFICAR COMPRAS</h3>
+                </div>
+                <div>
+                    <h3 class="titulo">Ingrese el ID de la compra</h3>
+                    <input class="inputEC" type="number" id="inputID1" placeholder="ID">
+                </div>
+                <div>
+                    <button onclick="eliminarCompraDeLaDB()" class="botones4"><b>Eliminar</b></button>
+                    <button onclick="modificarDatosADB()" class="botones4"><b>Modificar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
